@@ -1,0 +1,170 @@
+7.2.1
+
+for meters in  100, 90, 95, 87, 102 :
+ if meters % 3 == 0:
+   print(meters, 'Подходит')
+ else:
+   print(meters, 'Не подходит')
+
+7.2.2
+
+for number in  3,7,5,6,4 :
+ print(number ** 2,' ',number ** 3,' ',number ** 4)
+
+7.2.3
+
+for ticket in  345, 19, 87, 1020, 421, 555 :
+ if ticket % 5 == 0 and ticket // 1000 == 0 :
+   print (ticket,'-выйгрышный')
+
+7.3.1
+
+for number in range(11) :
+  print(number**2)
+
+7.3.3
+
+for number in range(21):
+  print(2**number)
+
+7.4.1
+
+for number in range(1, 11):
+  print(number**3)
+
+7.4.2
+
+first_number = int(input('Введите первое число отрезка:'))
+last_number = int(input('Введите последнее число отрезка:'))
+summ = 0
+for number in range(first_number, last_number + 1):
+  summ += number
+print('Сумма чисел от', first_number,' до ',last_number,' равна ',summ)
+
+7.4.3
+
+wake_up = int(input('Введите время, когда Саша проснулся от 0 до 22'))
+awake_hours = 0
+summ = 0
+for hour in range(wake_up, 23):
+  print('Сейчас ',hour,' часов. ')
+  calories = int(input('Сколько калорий съел Саня?'))
+  summ += calories
+  awake_hours += 1
+  if summ >=2000 :
+    print('Саня переел и вырубился')
+    break
+print('Саня съел', summ,' коллорий и бодорствовал ',awake_hours)
+
+7.6.1
+
+for number in  114, 12, 14, 10605, 4907, 450 :
+ if number % 2 == 0 and number % 3 != 0 :
+   print (number,'Число подходит')
+ else:
+   print (number,'Число не подходит')
+
+7.6.2.
+summ = 0
+for number in  114, 12, 14, 10605, 4907, 450, 78, -23, -24, -78 :
+ if number % 2 == 0 and number >= 0 :
+   summ += 1
+print (summ)
+
+7.6.3.
+
+summ = 0
+for month in range (1,13):
+  print(month, '-месяц')
+  employeesalary = int(input('Введите зарплату за  месяц.'))
+  summ += employeesalary
+print('Средняя зарплата за год =',summ/12)
+
+7.6.4.
+
+violations = 0
+for numbers_sector in range(30,36):
+  print('Людей в ', numbers_sector, ' секторе:')
+  number_of_people = int(input(' ' ))
+  if number_of_people > 10:
+    violations += 1
+    print('Нарушение! Слишком много людей в секторе!')
+  else:
+    print('Всё спокойно.')
+print('Количество нарушений:',violations)
+
+7.6.5.
+
+number = int(input('Введите число:'))
+factorial = 1
+for i in range(2,number):
+  factorial *= number
+print(factorial)
+
+7.6.6.
+
+a5,a4,a3=0,0,0
+n = int(input('Введите колличество людей в классе'))
+for i in range(1,n+1):
+ n1 = int(input('Введите оценку ' + str(i) + ' ученика'))
+ if n1 == 5:
+   a5 += 1
+ elif n1 == 4 :
+    a4 += 1
+ else :
+    a3 += 1
+if a5 > a4 and a5 > a3 :
+  print ('больше отличников')
+elif a4 > a5 and a4 > a3 :
+  print ('больше хорошистов')
+elif a3 > a5 and a3 > a4 :
+  print ('больше троечников')
+elif a4 == a5 and a4 > a3 :
+  print ('отличников и хорошистов одинаково,но больше чем троечников')
+elif a4 == a3 and a4 > a5 :
+  print ('троечников и хорошистов одинаково,но больше чем отличников')
+elif a3 == a5 and a3 > a4 :
+  print ('отличников и троечников одинаково,но больше чем хорошистов')
+else:
+    print ('Всех одинаково')
+
+7.6.7.
+am = 0
+counter = 0
+print ('Первое число должно быть меньше второго')
+a = int(input('Введите первую точку отрезка a:'))
+b = int(input('Введите вторую точку отрезка b:'))
+for i in range(a, b+1):
+  print(i,'   ',i % 3)
+  if i % 3 == 0 and i != 0:
+    am +=i
+    counter +=1
+print('Среднеарифметическое чисел кратных 3 на отрезке от ',a,' до',b,' равен ', am/counter)
+
+7.6.9.
+d1 = int(input('Введите 1 месяц'))
+for i in range(2,11):
+ sn = int(input('Введите '+str(i)+' месяц'))
+ if sn < d1 :
+    sn = -1
+  break
+ else:
+  d1 = sn
+if sn == -1 :
+  print ('Последовательность не упорядочина')
+else : 
+  print('Последовательность верная')
+
+
+249-79-30 MTC ВЛАДИСЛАВ
+ПРОЕКТОР , ЭКРАН, МИКРОФОН, КАРАОКЕ
+
+
+
+
+
+
+
+
+
+
